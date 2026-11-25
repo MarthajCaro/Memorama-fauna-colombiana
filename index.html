@@ -1,11 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memorama Fauna Colombiana</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body></body>
+  <body>
+    <div class="game">
+      <hi>🌿Memorama Fauna Colombiana</hi>
+      <p class="subtitle">
+        Encuentra las parejas y aprende sobre nuestros animales
+      </p>
+
+      <div class="levls" id="levels">
+        <button data-pairs="6">Fácil</button>
+        <button data-pairs="8" class="active">Medio</button>
+        <button data-pairs="12">Difícil</button>
+      </div>
+
+      <div class="bar">
+        <div class="stat">
+          <small>Tiempo</small><strong id="time">0:00</strong>
+        </div>
+        <div class="stat">
+          <small>Movimientos</small><strong id="moves">0</strong>
+        </div>
+        <div class="stat">
+          <small>Parejas</small><strong id="pairs">0/8</strong>
+        </div>
+        <button class="btn" id="restart">↻ Reiniciar</button>
+      </div>
+
+      <div class="board" id="board"></div>
+
+      <div class="fact" id="fact">
+        💡 Al encontrar una pareja verás un dato curioso del animal.
+      </div>
+      <div class="best" id="best"></div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <h2>🎉 ¡Ganaste!</h2>
+        <p id="result"></p>
+        <buton class="btn" id="again">Jugar otra vez</buton>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
