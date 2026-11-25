@@ -1,79 +1,61 @@
 <!doctype html>
 <html lang="es">
   <head>
-        <meta charset="UTF-8" />
-
-    <!-- Permite que el juego se adapte a celulares, tabletas y computadores -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <title>Memorama Fauna Colombiana</title>
-
-     <link rel="stylesheet" href="css/styles.css" />
+    <title>Memorama Fauna Colombiana</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <!-- Contenedor principal del juego -->
     <main class="game">
+      <!-- Panel lateral: título, niveles y estadísticas -->
+      <aside class="panel">
+        <header class="game-header">
+          <h1>🌿 Memorama Fauna Colombiana</h1>
+          <p>Encuentra las parejas y aprende sobre nuestros animales</p>
+        </header>
 
-      <header class="game-header">
-            <h1>🌿 Memorama Fauna Colombiana</h1>
-            <p>Encuentra las parejas y aprende sobre nuestros animales</p>
-      </header>
+        <section class="levels" id="levels">
+          <button data-pairs="6">Fácil</button>
+          <button data-pairs="8" class="active">Medio</button>
+          <button data-pairs="12">Difícil</button>
+        </section>
 
-      <!-- Botones para seleccionar el nivel de dificultad -->
-      <section class="levels" id="levels">
-        <button data-pairs="6">Fácil</button>
-        <button data-pairs="8" class="active">Medio</button>
-        <button data-pairs="12">Difícil</button>
-      </section>
+        <section class="bar">
+          <div class="stat">
+            <small>Tiempo</small>
+            <strong id="time">0:00</strong>
+          </div>
 
-      <!-- Barra que muestra las estadísticas del juego -->
-      <section class="bar">
-        <!-- Muestra el tiempo transcurrido -->
-        <div class="stat">
-          <small>Tiempo</small>
-          <strong id="time">0:00</strong>
+          <div class="stat">
+            <small>Movimientos</small>
+            <strong id="moves">0</strong>
+          </div>
+
+          <div class="stat">
+            <small>Parejas</small>
+            <strong id="pairs">0/8</strong>
+          </div>
+
+          <button class="btn" id="restart">↻ Reiniciar</button>
+        </section>
+
+        <div class="fact" id="fact">
+          💡 Al encontrar una pareja verás un dato curioso del animal.
         </div>
 
-        <!-- Muestra la cantidad de movimientos -->
-        <div class="stat">
-          <small>Movimientos</small>
-          <strong id="moves">0</strong>
-        </div>
+        <p class="best" id="best"></p>
+      </aside>
 
-        <!-- Muestra las parejas encontradas -->
-        <div class="stat">
-          <small>Parejas</small>
-          <strong id="pairs">0/8</strong>
-        </div>
-
-        <!-- Botón para comenzar nuevamente -->
-        <button class="btn" id="restart">↻ Reiniciar</button>
-
-      </section>
-
-      <!-- Aquí JavaScript genera dinámicamente las tarjetas -->
+      <!-- Zona del tablero -->
       <section class="board" id="board"></section>
-
-      <!-- Información del animal -->
-      <div class="fact" id="fact">
-        💡 Al encontrar una pareja verás un dato curioso del animal.
-      </section>
-
-      <!-- récord del jugador -->
-      <p class="best" id="best"></p>
-
     </main>
 
-    <!-- Ventana emergente que aparece cuando se completa el juego -->
     <div class="modal" id="modal">
       <div class="modal-box">
         <h2>🎉 ¡Ganaste!</h2>
-
-        <!-- JavaScript coloca aquí el resultado de la partida -->
         <p id="result"></p>
-
-        <!-- Permite volver a jugar -->
         <button class="btn" id="again">Jugar otra vez</button>
       </div>
     </div>

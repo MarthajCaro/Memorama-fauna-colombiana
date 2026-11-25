@@ -1,0 +1,290 @@
+:root {
+  --text: #2b2340;
+  --muted: #8a82a0;
+  --purple: #7c5cff;
+  --teal: #1fbfa8;
+  --background: #efe9ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  padding: 12px;
+  overflow: hidden;
+}
+
+/* Panel a la izquierda, tablero a la derecha */
+.game {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  gap: 16px;
+}
+
+/* ===== Panel lateral ===== */
+.panel {
+  width: 230px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.game-header h1 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.game-header p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.levels button {
+  background: #fff;
+  border: 2px solid #e4def5;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.levels button.active {
+  border-color: var(--purple);
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(43, 35, 64, 0.08);
+}
+
+.stat small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.stat strong {
+  font-size: 18px;
+}
+
+.btn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.fact {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+
+.best {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== Tablero ===== */
+.board {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  perspective: 1000px;
+}
+
+/* El tamaño lo calcula JavaScript (--card-w y --card-h) */
+.card {
+  position: relative;
+  width: var(--card-w, 80px);
+  height: var(--card-h, 107px);
+  cursor: pointer;
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.back {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f0ebff 0 8px,
+    #ffffff 8px 16px
+  );
+  border: 3px solid #e4def5;
+  box-shadow: 0 4px 12px rgba(43, 35, 64, 0.1);
+}
+
+.back .logo {
+  width: 48%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #b9a6ff, #8fe3d6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.front {
+  background: #fff;
+  transform: rotateY(180deg);
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(43, 35, 64, 0.1);
+}
+
+.front img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.front .name {
+  flex: 0 0 auto;
+  font-size: var(--name-size, 12px);
+  font-weight: bold;
+  padding: 3px 0;
+  text-align: center;
+  color: var(--text);
+  line-height: 1.1;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.card.flipped .inner,
+.card.matched .inner {
+  transform: rotateY(180deg);
+}
+
+.card.matched .front {
+  outline: 3px solid var(--teal);
+  background: #e8fbf7;
+}
+
+/* ===== Ventana de victoria ===== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(43, 35, 64, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.modal-box p {
+  margin: 12px 0 18px;
+}
+
+/* ===== Celulares: el panel pasa arriba y se compacta ===== */
+@media (max-width: 700px) {
+  .game {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .panel {
+    width: 100%;
+    gap: 6px;
+  }
+
+  .game-header p,
+  .fact,
+  .best {
+    display: none;
+  }
+
+  .game-header h1 {
+    font-size: 1rem;
+  }
+
+  .levels {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bar {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 10px;
+  }
+}
