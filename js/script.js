@@ -5,79 +5,119 @@
 // Cada objeto representa un animal.
 // Contiene la ruta de su imagen, nombre y dato curioso.
 
-const ANIMALES = [
-  {
-    img: "img/fauna/jaguar.jpg",
-    nombre: "Guacamaya",
-    dato: "Las guacamayas pueden vivir más de 50 años.",
+const TEMAS = {
+  fauna: {
+    titulo: "🌿 Memorama Fauna Colombiana",
+    cartas: [
+      {
+        img: "img/fauna/guacamaya.jpg",
+        nombre: "Guacamaya",
+        dato: "Las guacamayas pueden vivir más de 50 años.",
+      },
+
+      {
+        img: "img/fauna/colibri.jpg",
+        nombre: "Colibrí",
+        dato: "Los colibríes pueden volar hacia atrás.",
+      },
+
+      {
+        img: "img/fauna/rana-dorada.jpg",
+        nombre: "Rana dorada",
+        dato: "Es uno de los animales más venenosos del mundo.",
+      },
+
+      {
+        img: "img/fauna/jaguar.jpg",
+        nombre: "Jaguar",
+        dato: "Es el felino más grande de América.",
+      },
+
+      {
+        img: "img/fauna/mariposa-morfo.jpg",
+        nombre: "Mariposa morfo",
+        dato: "Sus alas presentan un llamativo color azul.",
+      },
+
+      {
+        img: "img/fauna/condor.jpg",
+        nombre: "Cóndor andino",
+        dato: "Es el ave nacional de Colombia.",
+      },
+
+      {
+        img: "img/fauna/tortuga-marina.jpg",
+        nombre: "Tortuga marina",
+        dato: "Algunas llegan a las playas colombianas a poner sus huevos.",
+      },
+
+      {
+        img: "img/fauna/delfin-rosado.jpg",
+        nombre: "Delfín rosado",
+        dato: "Habita en los ríos de la Amazonía.",
+      },
+
+      {
+        img: "img/fauna/perezoso.jpg",
+        nombre: "Perezoso",
+        dato: "Es conocido por sus movimientos lentos.",
+      },
+
+      {
+        img: "img/fauna/titi-cabeciblanco.jpg",
+        nombre: "Tití cabeciblanco",
+        dato: "Es una especie endémica de Colombia.",
+      },
+
+      {
+        img: "img/fauna/ballena-jorobada.jpg",
+        nombre: "Ballena jorobada",
+        dato: "Visita el Pacífico colombiano para reproducirse.",
+      },
+
+      {
+        img: "img/fauna/flamenco.jpg",
+        nombre: "Flamenco",
+        dato: "Su coloración rosada está relacionada con su alimentación.",
+      },
+    ],
   },
 
-  {
-    img: "img/fauna/colibri.jpg",
-    nombre: "Colibrí",
-    dato: "Los colibríes pueden volar hacia atrás.",
+  instrumentos: {
+    titulo: "🎵 Memorama de Instrumentos",
+    cartas: [
+      {
+        img: "img/instrumentos/guitarra.jpg",
+        nombre: "Guitarra",
+        dato: "Normalmente tiene 6 cuerdas.",
+      },
+      // ...las otras 11 cartas
+    ],
   },
 
-  {
-    img: "img/fauna/rana-dorada.jpg",
-    nombre: "Rana dorada",
-    dato: "Es uno de los animales más venenosos del mundo.",
+  platos: {
+    titulo: "🍲 Memorama de Platos Típicos",
+    cartas: [
+      // ...las 12 cartas
+    ],
   },
 
-  {
-    img: "img/fauna/jaguar.jpg",
-    nombre: "Jaguar",
-    dato: "Es el felino más grande de América.",
+  frutas: {
+    titulo: "🍓 Memorama de Frutas Colombianas",
+    cartas: [
+      {
+        img: "img/frutas/lulo.jpg",
+        nombre: "Lulo",
+        dato: "También se le conoce como naranjilla.",
+      },
+      {
+        img: "img/frutas/mora.jpg",
+        nombre: "Mora",
+        dato: "Es muy usada en jugos y crece bien en clima frío.",
+      },
+    ],
   },
-
-  {
-    img: "img/fauna/mariposa-morfo.jpg",
-    nombre: "Mariposa morfo",
-    dato: "Sus alas presentan un llamativo color azul.",
-  },
-
-  {
-    img: "img/fauna/condor.jpg",
-    nombre: "Cóndor andino",
-    dato: "Es el ave nacional de Colombia.",
-  },
-
-  {
-    img: "img/fauna/tortuga-marina.jpg",
-    nombre: "Tortuga marina",
-    dato: "Algunas llegan a las playas colombianas a poner sus huevos.",
-  },
-
-  {
-    img: "img/fauna/delfin-rosado.jpg",
-    nombre: "Delfín rosado",
-    dato: "Habita en los ríos de la Amazonía.",
-  },
-
-  {
-    img: "img/fauna/perezoso.jpg",
-    nombre: "Perezoso",
-    dato: "Es conocido por sus movimientos lentos.",
-  },
-
-  {
-    img: "img/fauna/titi-cabeciblanco.jpg",
-    nombre: "Tití cabeciblanco",
-    dato: "Es una especie endémica de Colombia.",
-  },
-
-  {
-    img: "img/fauna/ballena-jorobada.jpg",
-    nombre: "Ballena jorobada",
-    dato: "Visita el Pacífico colombiano para reproducirse.",
-  },
-
-  {
-    img: "img/fauna/flamenco.jpg",
-    nombre: "Flamenco",
-    dato: "Su coloración rosada está relacionada con su alimentación.",
-  },
-];
+};
 
 /* ===================================
    2. VARIABLES DEL JUEGO
