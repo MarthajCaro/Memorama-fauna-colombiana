@@ -14,67 +14,56 @@ const TEMAS = {
         nombre: "Guacamaya",
         dato: "Las guacamayas pueden vivir más de 50 años.",
       },
-
       {
         img: "img/fauna/colibri.jpg",
         nombre: "Colibrí",
         dato: "Los colibríes pueden volar hacia atrás.",
       },
-
       {
         img: "img/fauna/rana-dorada.jpg",
         nombre: "Rana dorada",
         dato: "Es uno de los animales más venenosos del mundo.",
       },
-
       {
         img: "img/fauna/jaguar.jpg",
         nombre: "Jaguar",
         dato: "Es el felino más grande de América.",
       },
-
       {
         img: "img/fauna/mariposa-morfo.jpg",
         nombre: "Mariposa morfo",
         dato: "Sus alas presentan un llamativo color azul.",
       },
-
       {
         img: "img/fauna/condor.jpg",
         nombre: "Cóndor andino",
         dato: "Es el ave nacional de Colombia.",
       },
-
       {
         img: "img/fauna/tortuga-marina.jpg",
         nombre: "Tortuga marina",
         dato: "Algunas llegan a las playas colombianas a poner sus huevos.",
       },
-
       {
         img: "img/fauna/delfin-rosado.jpg",
         nombre: "Delfín rosado",
         dato: "Habita en los ríos de la Amazonía.",
       },
-
       {
         img: "img/fauna/perezoso.jpg",
         nombre: "Perezoso",
         dato: "Es conocido por sus movimientos lentos.",
       },
-
       {
         img: "img/fauna/titi-cabeciblanco.jpg",
         nombre: "Tití cabeciblanco",
         dato: "Es una especie endémica de Colombia.",
       },
-
       {
         img: "img/fauna/ballena-jorobada.jpg",
         nombre: "Ballena jorobada",
         dato: "Visita el Pacífico colombiano para reproducirse.",
       },
-
       {
         img: "img/fauna/flamenco.jpg",
         nombre: "Flamenco",
@@ -87,18 +76,132 @@ const TEMAS = {
     titulo: "🎵 Memorama de Instrumentos",
     cartas: [
       {
-        img: "img/instrumentos/guitarra.jpg",
-        nombre: "Guitarra",
-        dato: "Normalmente tiene 6 cuerdas.",
+        img: "img/instrumentos/acordeon.png",
+        nombre: "Acordeón vallenato",
+        dato: "Es el instrumento principal del vallenato.",
       },
-      // ...las otras 11 cartas
+      {
+        img: "img/instrumentos/arpa.png",
+        nombre: "Arpa llanera",
+        dato: "Es el instrumento principal de la música llanera.",
+      },
+      {
+        img: "img/instrumentos/bandola.png",
+        nombre: "Bandola llanera",
+        dato: "Es un instrumento de cuerda típico de los Llanos que lleva la melodía del joropo.",
+      },
+      {
+        img: "img/instrumentos/bombo.png",
+        nombre: "Bombo del Pacífico",
+        dato: "Marca el ritmo en la música del Pacífico, como el currulao.",
+      },
+      {
+        img: "img/instrumentos/caja.png",
+        nombre: "Caja vallenata",
+        dato: "Es un tambor pequeño que se toca con las manos y marca el ritmo del vallenato.",
+      },
+      {
+        img: "img/instrumentos/cuatro.png",
+        nombre: "Cuatro llanero",
+        dato: "Es una guitarra pequeña de cuatro cuerdas usada en el joropo.",
+      },
+      {
+        img: "img/instrumentos/guacharaca.png",
+        nombre: "Guacharaca",
+        dato: "Es un instrumento que se raspa con una varilla y acompaña al vallenato.",
+      },
+
+      {
+        img: "img/instrumentos/maracas.png",
+        nombre: "Maracas llaneras",
+        dato: "Llevan semillas dentro y se agitan para marcar el ritmo del joropo.",
+      },
+      {
+        img: "img/instrumentos/llamador.png",
+        nombre: "Llamador",
+        dato: "Es un tambor pequeño y agudo de la cumbia que marca el pulso.",
+      },
+      {
+        img: "img/instrumentos/marimba.png",
+        nombre: "Marimba de chonta",
+        dato: "Sus teclas se hacen con madera de palma de chonta y es el símbolo de la música del Pacífico.",
+      },
+      {
+        img: "img/instrumentos/tambora.png",
+        nombre: "Tambora",
+        dato: "Es un tambor grande y grave que marca el ritmo de la cumbia y el bullerengue del Caribe colombiano.",
+      },
+      {
+        img: "img/instrumentos/tiple.png",
+        nombre: "Tiple",
+        dato: "Es una guitarra pequeña de 12 cuerdas típica de la música andina.",
+      },
     ],
   },
 
   platos: {
     titulo: "🍲 Memorama de Platos Típicos",
     cartas: [
-      // ...las 12 cartas
+      {
+        img: "img/platos/ajiaco.png",
+        nombre: "Ajiaco santafereño",
+        dato: "Es la sopa típica de Bogotá, con tres tipos de papa y guascas.",
+      },
+      {
+        img: "img/platos/arepa.png",
+        nombre: "Arepa con queso",
+        dato: "Se hace con maíz y queso, y se come en el desayuno o la merienda.",
+      },
+      {
+        img: "img/platos/arroz.png",
+        nombre: "Arroz con pollo",
+        dato: "Mezcla arroz, pollo y verduras, y es común en reuniones familiares.",
+      },
+      {
+        img: "img/platos/bandeja.png",
+        nombre: "Bandeja paisa",
+        dato: "Lleva frijoles, arroz, chicharrón, huevo, carne, chorizo, morcilla, plátano y aguacate.",
+      },
+      {
+        img: "img/platos/caldo.png",
+        nombre: "Caldo de costilla",
+        dato: "Es una sopa de costilla de res con papa, típica del desayuno.",
+      },
+      {
+        img: "img/platos/changua.png",
+        nombre: "Changua",
+        dato: "Es una sopa de leche y huevo del altiplano cundiboyacense.",
+      },
+      {
+        img: "img/platos/chicharron.png",
+        nombre: "Chicharrón",
+        dato: "Es la piel del cerdo frita hasta quedar crocante.",
+      },
+      {
+        img: "img/platos/empanada.png",
+        nombre: "Empanada",
+        dato: "Es una masa de maíz frita, rellena de carne y papa.",
+      },
+      {
+        img: "img/platos/lechona.png",
+        nombre: "Lechona",
+        dato: "Es típica del Tolima: un cerdo relleno de arroz y arvejas.",
+      },
+      {
+        img: "img/platos/patacon.png",
+        nombre: "Patacón con hogao",
+        dato: "Es plátano verde aplastado y frito, con salsa de tomate y cebolla.",
+      },
+      {
+        img: "img/platos/sancocho.png",
+        nombre: "Sancocho",
+        dato: "Es una sopa con carne, plátano y yuca.",
+      },
+      {
+        img: "img/platos/tamal.png",
+        nombre: "Tamal tolimense",
+        dato: "Se envuelve en hoja de plátano y lleva arroz, cerdo, pollo y huevo.",
+      },
     ],
   },
 
@@ -106,14 +209,64 @@ const TEMAS = {
     titulo: "🍓 Memorama de Frutas Colombianas",
     cartas: [
       {
-        img: "img/frutas/lulo.jpg",
+        img: "img/frutas/carambolo.png",
+        nombre: "Carambolo",
+        dato: "Al cortarlo en rodajas forma una estrella de cinco puntas.",
+      },
+      {
+        img: "img/frutas/chontaduro.png",
+        nombre: "Chontaduro",
+        dato: "Es el fruto de una palma y es típico del Pacífico colombiano.",
+      },
+      {
+        img: "img/frutas/curuba.png",
+        nombre: "Curuba",
+        dato: "Es alargada, de pulpa anaranjada y sabor ácido, muy usada en jugos.",
+      },
+      {
+        img: "img/frutas/granadilla.png",
+        nombre: "Granadilla",
+        dato: "Tiene cáscara dura y semillas cubiertas de pulpa gelatinosa.",
+      },
+      {
+        img: "img/frutas/guanabana.png",
+        nombre: "Guanábana",
+        dato: "Su pulpa blanca y cremosa se usa en jugos y postres.",
+      },
+      {
+        img: "img/frutas/lulo.png",
         nombre: "Lulo",
         dato: "También se le conoce como naranjilla.",
       },
       {
-        img: "img/frutas/mora.jpg",
-        nombre: "Mora",
-        dato: "Es muy usada en jugos y crece bien en clima frío.",
+        img: "img/frutas/mamoncillo.png",
+        nombre: "Mamoncillo",
+        dato: "Se come chupando la pulpa que cubre una semilla grande.",
+      },
+      {
+        img: "img/frutas/mango.png",
+        nombre: "Mango",
+        dato: "Es una de las frutas tropicales más populares.",
+      },
+      {
+        img: "img/frutas/maracuya.png",
+        nombre: "Maracuyá",
+        dato: "Su pulpa es muy aromática y ácida, ideal para jugos.",
+      },
+      {
+        img: "img/frutas/moras.png",
+        nombre: "Moras",
+        dato: "Crecen en clima frío y se usan en jugos y dulces.",
+      },
+      {
+        img: "img/frutas/pitahaya.png",
+        nombre: "Pitahaya",
+        dato: "La amarilla es dulce y tiene semillas pequeñas que se comen con la pulpa.",
+      },
+      {
+        img: "img/frutas/uchuva.png",
+        nombre: "Uchuva",
+        dato: "Viene protegida por una cáscara en forma de capuchón.",
       },
     ],
   },
@@ -126,6 +279,7 @@ const TEMAS = {
 // Función para seleccionar elementos HTML por su ID.
 const $ = (id) => document.getElementById(id);
 
+let temaActual = "fauna";
 let totalPairs = 8;
 let firstCard = null;
 let lock = false;
@@ -139,7 +293,6 @@ let finished = false;
    3. FUNCIÓN PARA MEZCLAR
    =================================== */
 
-// Mezcla aleatoriamente los elementos de un arreglo.
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -154,21 +307,21 @@ function shuffle(array) {
    =================================== */
 
 function createCards() {
-  // Seleccionamos los animales según la dificultad.
-  const selected = shuffle([...ANIMALES]).slice(0, totalPairs);
+  // Tomamos las cartas del tema elegido según la dificultad.
+  const selected = shuffle([...TEMAS[temaActual].cartas]).slice(0, totalPairs);
 
-  // Creamos dos tarjetas por cada animal.
+  // Creamos dos tarjetas por cada carta.
   const cards = shuffle([...selected, ...selected]);
 
   const board = $("board");
 
   board.innerHTML = "";
 
-  cards.forEach((animal) => {
+  cards.forEach((item) => {
     const card = document.createElement("div");
 
     card.className = "card";
-    card.dataset.name = animal.nombre;
+    card.dataset.name = item.nombre;
 
     card.innerHTML = `
       <div class="inner">
@@ -177,21 +330,19 @@ function createCards() {
         </div>
 
         <div class="face front">
-          <img src="${animal.img}" alt="${animal.nombre}">
-          <span class="name">${animal.nombre}</span>
+          <img src="${item.img}" alt="${item.nombre}">
+          <span class="name">${item.nombre}</span>
         </div>
       </div>
     `;
 
-    // Cuando hacemos clic, ejecutamos flipCard.
     card.addEventListener("click", () => {
-      flipCard(card, animal);
+      flipCard(card, item);
     });
 
     board.appendChild(card);
   });
 
-  // Ajustamos el tamaño de las tarjetas a la pantalla.
   fitBoard();
 }
 
@@ -199,7 +350,6 @@ function createCards() {
    4.1 AJUSTAR EL TABLERO A LA PANTALLA
    =================================== */
 
-// Calcula el tamaño de las tarjetas para que todo quepa sin scroll.
 function fitBoard() {
   const board = $("board");
   const gap = 10;
@@ -222,7 +372,6 @@ function fitBoard() {
   );
 }
 
-// Reajusta si cambia el tamaño de la ventana.
 window.addEventListener("resize", fitBoard);
 
 /* ===================================
@@ -240,8 +389,7 @@ function formatTime(seconds) {
    6. VOLTEAR Y COMPARAR TARJETAS
    =================================== */
 
-function flipCard(card, animal) {
-  // Evitamos clics cuando no se puede jugar.
+function flipCard(card, item) {
   if (
     lock ||
     finished ||
@@ -261,17 +409,14 @@ function flipCard(card, animal) {
 
   card.classList.add("flipped");
 
-  // Guardamos la primera tarjeta.
   if (!firstCard) {
     firstCard = card;
     return;
   }
 
-  // Ya seleccionamos la segunda tarjeta.
   moves++;
   $("moves").textContent = moves;
 
-  // Comparamos los nombres.
   if (firstCard.dataset.name === card.dataset.name) {
     firstCard.classList.add("matched");
     card.classList.add("matched");
@@ -279,17 +424,14 @@ function flipCard(card, animal) {
     found++;
 
     $("pairs").textContent = `${found}/${totalPairs}`;
-
-    $("fact").textContent = `💡 ${animal.nombre}: ${animal.dato}`;
+    $("fact").textContent = `💡 ${item.nombre}: ${item.dato}`;
 
     firstCard = null;
 
-    // Verificamos si encontramos todas las parejas.
     if (found === totalPairs) {
       winGame();
     }
   } else {
-    // Las tarjetas no coinciden.
     lock = true;
 
     const first = firstCard;
@@ -309,8 +451,9 @@ function flipCard(card, animal) {
    7. GUARDAR EL MEJOR RESULTADO
    =================================== */
 
+// Cada tema y nivel guarda su propio récord.
 function saveBest() {
-  const key = `memorama-best-${totalPairs}`;
+  const key = `memorama-best-${temaActual}-${totalPairs}`;
 
   const currentBest = JSON.parse(localStorage.getItem(key));
 
@@ -335,7 +478,7 @@ function saveBest() {
    =================================== */
 
 function showBest() {
-  const key = `memorama-best-${totalPairs}`;
+  const key = `memorama-best-${temaActual}-${totalPairs}`;
 
   const best = JSON.parse(localStorage.getItem(key));
 
@@ -386,13 +529,11 @@ function startGame() {
   $("pairs").textContent = `0/${totalPairs}`;
 
   $("fact").textContent =
-    "Encuentra las parejas para descubrir datos de la fauna colombiana.";
+    "Encuentra las parejas para descubrir datos curiosos.";
 
   $("modal").classList.remove("show");
 
   showBest();
-
-  // Generamos las tarjetas del nivel seleccionado.
   createCards();
 }
 
@@ -404,20 +545,41 @@ $("levels")
   .querySelectorAll("button")
   .forEach((button) => {
     button.addEventListener("click", () => {
-      // Quitamos la selección del nivel anterior.
       $("levels")
         .querySelectorAll("button")
         .forEach((item) => {
           item.classList.remove("active");
         });
 
-      // Activamos el nivel seleccionado.
       button.classList.add("active");
 
-      // Actualizamos la cantidad de parejas.
       totalPairs = Number(button.dataset.pairs);
 
-      // Comenzamos una nueva partida.
+      startGame();
+    });
+  });
+
+/* ===================================
+   11.1 CONFIGURAR LOS TEMAS
+   =================================== */
+
+$("themes")
+  .querySelectorAll("button")
+  .forEach((button) => {
+    button.addEventListener("click", () => {
+      $("themes")
+        .querySelectorAll("button")
+        .forEach((item) => {
+          item.classList.remove("active");
+        });
+
+      button.classList.add("active");
+
+      // Cambiamos de tema y actualizamos el título.
+      temaActual = button.dataset.theme;
+      document.querySelector(".game-header h1").textContent =
+        TEMAS[temaActual].titulo;
+
       startGame();
     });
   });
