@@ -352,27 +352,27 @@ body {
 body[data-tema="fauna"] {
   --back-a: #e3f6e8;
   --back-border: #b7e4c4;
-  --logo-1: #7fd69a;
-  --logo-2: #3fb97a;
+  --logo-1: #a9f8c2;
+  --logo-2: #b8f6d6;
 }
 
 body[data-tema="instrumentos"] {
   --back-a: #f3e6fb;
   --back-border: #dbbdf0;
-  --logo-1: #c58bf2;
-  --logo-2: #8e6cf0;
+  --logo-1: rgb(221, 195, 242);
+  --logo-2: #a288f2;
 }
 
 body[data-tema="platos"] {
   --back-a: #ffeede;
   --back-border: #ffd0a6;
-  --logo-1: #ffb36b;
+  --logo-1: #f1dfcf;
   --logo-2: #ff8a5c;
 }
 
 body[data-tema="frutas"] {
   --back-a: #ffe6ee;
   --back-border: #ffbfd2;
-  --logo-1: #ff8fb1;
-  --logo-2: #ff6b8f;
+  --logo-1: #ebcad4;
+  --logo-2: #f47394;
 }
