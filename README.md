@@ -1,6 +1,6 @@
 # 🦜 Memorama Fauna Colombiana
 
-Juego de memoria (memorama) interactivo para conocer la fauna de Colombia. Voltea las cartas, encuentra los pares y aprende sobre los animales de nuestro país.
+Juego de memoria (memorama) interactivo para conocer la cultura de Colombia. Voltea las cartas, encuentra las parejas y aprende datos curiosos sobre la fauna, los instrumentos, los platos típicos y las frutas del país.
 
 ## 🚀 Demo en vivo
 
@@ -8,19 +8,22 @@ Juego de memoria (memorama) interactivo para conocer la fauna de Colombia. Volte
 
 ## 🎮 Cómo jugar
 
-- 3 niveles de dificultad: Fácil (6 parejas), Medio (8) y Difícil (12).
-- Cartas con animales representativos de la fauna colombiana.
-- Barajado aleatorio en cada partida.
-- Cronómetro, contador de movimientos y parejas encontradas.
-- Dato curioso de cada animal al encontrar su pareja.
-- Récord por nivel guardado en el navegador.
-- Diseño responsivo para computador y móvil.
+1. Elige un tema y un nivel de dificultad.
+2. Haz clic en una carta para voltearla.
+3. Voltea una segunda carta e intenta encontrar su pareja.
+4. Si coinciden, quedan descubiertas y verás un dato curioso; si no, se vuelven a ocultar.
+5. Gana cuando encuentres todas las parejas con el menor número de movimientos y el menor tiempo.
 
 ## ✨ Características
 
-- Cartas con animales representativos de la fauna colombiana.
+- 4 temas: fauna colombiana, instrumentos musicales, platos típicos y frutas.
+- 3 niveles de dificultad: Fácil (6 parejas), Medio (8) y Difícil (12).
+- Reverso de las cartas con un diseño distinto para cada tema.
 - Barajado aleatorio en cada partida.
-- Contador de intentos y pares encontrados.
+- Cronómetro, contador de movimientos y parejas encontradas.
+- Dato curioso de cada carta al encontrar su pareja.
+- Récord por tema y nivel guardado en el navegador.
+- Tablero que se ajusta a la pantalla, sin necesidad de hacer scroll.
 - Diseño responsivo para computador y móvil.
 
 ## 🛠️ Tecnologías
