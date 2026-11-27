@@ -153,7 +153,7 @@ const TEMAS = {
         dato: "Se hace con maíz y queso, y se come en el desayuno o la merienda.",
       },
       {
-        img: "img/platos/arroz.png",
+        img: "img/platos/arroz.jpeg",
         nombre: "Arroz con pollo",
         dato: "Mezcla arroz, pollo y verduras, y es común en reuniones familiares.",
       },
@@ -272,6 +272,14 @@ const TEMAS = {
   },
 };
 
+// Icono del reverso de las cartas según el tema.
+const ICONOS = {
+  fauna: "🦜",
+  instrumentos: "🎵",
+  platos: "🍲",
+  frutas: "🍓",
+};
+
 /* ===================================
    2. VARIABLES DEL JUEGO
    =================================== */
@@ -326,7 +334,7 @@ function createCards() {
     card.innerHTML = `
       <div class="inner">
         <div class="face back">
-          <div class="logo">?</div>
+          <div class="logo">${ICONOS[temaActual]}</div>
         </div>
 
         <div class="face front">
@@ -514,6 +522,7 @@ function winGame() {
 
 function startGame() {
   clearInterval(timer);
+  document.body.dataset.tema = temaActual;
 
   firstCard = null;
   lock = false;

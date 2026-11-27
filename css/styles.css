@@ -164,28 +164,35 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+/* Colores del reverso (cambian según el tema) */
+body {
+  --back-a: #f0ebff;
+  --back-b: #ffffff;
+  --back-border: #e4def5;
+  --logo-1: #b9a6ff;
+  --logo-2: #8fe3d6;
+}
+
 .back {
   background-color: #fff;
   background-image: repeating-linear-gradient(
     45deg,
-    #f0ebff 0 8px,
-    #ffffff 8px 16px
+    var(--back-a) 0 8px,
+    var(--back-b) 8px 16px
   );
-  border: 3px solid #e4def5;
+  border: 3px solid var(--back-border);
   box-shadow: 0 4px 12px rgba(43, 35, 64, 0.1);
 }
 
 .back .logo {
-  width: 48%;
+  width: 55%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: linear-gradient(135deg, #b9a6ff, #8fe3d6);
+  background: linear-gradient(135deg, var(--logo-1), var(--logo-2));
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   font-size: 28px;
-  font-weight: bold;
 }
 
 .front {
@@ -339,4 +346,33 @@ body {
     padding: 6px 10px;
     font-size: 12px;
   }
+}
+
+/* Diseño del reverso por tema */
+body[data-tema="fauna"] {
+  --back-a: #e3f6e8;
+  --back-border: #b7e4c4;
+  --logo-1: #7fd69a;
+  --logo-2: #3fb97a;
+}
+
+body[data-tema="instrumentos"] {
+  --back-a: #f3e6fb;
+  --back-border: #dbbdf0;
+  --logo-1: #c58bf2;
+  --logo-2: #8e6cf0;
+}
+
+body[data-tema="platos"] {
+  --back-a: #ffeede;
+  --back-border: #ffd0a6;
+  --logo-1: #ffb36b;
+  --logo-2: #ff8a5c;
+}
+
+body[data-tema="frutas"] {
+  --back-a: #ffe6ee;
+  --back-border: #ffbfd2;
+  --logo-1: #ff8fb1;
+  --logo-2: #ff6b8f;
 }
